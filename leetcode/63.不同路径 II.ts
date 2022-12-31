@@ -1,10 +1,3 @@
-// const input = [[0, 0, 0], [0, 1, 0], [0, 0, 0]];
-// const input = [[1]];
-// const input = [[0]];
-const input = [[0, 0], [1, 0]];
-console.log(uniquePathsWithObstacles(input));
-
-
 function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
   const m = obstacleGrid.length;
   const n = obstacleGrid[0].length;
@@ -38,3 +31,5 @@ function uniquePathsWithObstacles(obstacleGrid: number[][]): number {
   }
   return dp[m - 1][n - 1];
 };
+
+export {}
